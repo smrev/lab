@@ -1,7 +1,8 @@
+import unittest
 from classes import *
 
 
-class Test:
+class MyTestCase(unittest.TestCase):
     def test_power(self):
         self.tv = Television()
         assert self.tv.__str__() == 'TV status: Is on = False, Channel = 0, Volume = 0'
@@ -90,3 +91,6 @@ class Test:
         self.tv.power()
         self.tv.volume_down()
         assert self.tv.__str__() == 'TV status: Is on = False, Channel = 0, Volume = 1'
+
+if __name__ == '__main__':
+    unittest.main()
