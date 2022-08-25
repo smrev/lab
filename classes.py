@@ -1,3 +1,4 @@
+
 class Television:
     MIN_CHANNEL = 0     # Minimum TV channel
     MAX_CHANNEL = 3     # Maximum TV channel
@@ -76,3 +77,7 @@ class Television:
         c_status = str(self.__channel)
         v_status = str(self.__volume)
         return f'TV status: Is on = {self.__status}, Channel = {c_status}, Volume = {v_status}'
+
+        '''
+        added comment to practice clone and git push
+        '''
